@@ -31,7 +31,7 @@ p {
   font-size: 40mm;
   text-align: center;
   font-weight: bolder;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: "Syne", sans-serif;
   color: #2d19e8;
   padding: 5rem;
   margin: 1rem;
@@ -107,6 +107,13 @@ p {
   flex-basis: auto;
   align-self: auto;
   order: 0;
+}
+
+p {
+  font-family: "Syne", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
 }
 
 /* Define the fade-in animation */
