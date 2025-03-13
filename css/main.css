@@ -109,11 +109,12 @@ p {
   order: 0;
 }
 
-p {
-  font-family: "Syne", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
+main:hover {
+  background-color: aqua;
+}
+
+body {
+  font-family: Syne, sans-serif;
 }
 
 /* Define the fade-in animation */
