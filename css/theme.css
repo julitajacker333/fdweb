@@ -1,0 +1,9 @@
+:root {
+  --color-fondo: #ffffff;
+  --color-texto: #000000;
+}
+:root.dark {
+  --color-fondo: #121212;
+  --color-texto: #eaeaea;
+}
+/* para modo claro y oscuro */
