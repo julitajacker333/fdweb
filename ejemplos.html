@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .caja {
+        width: 100px;
+        height: 100px;
+        background-color: lightblue;
+        position: absolute;
+        top: 100px;
+        left: 50px;
+        /*Esto significa que la caja se posiciona a 50px del borde superior de la ventana del navegador.*/
+        z-index: -1;
+        /*Esto significa que la caja se posiciona detrás de los demás elementos.*/
+      }
+      #gatotriste {
+        width: 500px;
+        height: auto;
+        float: right;
+        /*Esto significa que la imagen se posiciona a la derecha del texto.*/
+        border-radius: 10px;
+      }
+      .menu {
+        display: flex;
+        width: 100%;
+        /*esto es para que el menú ocupe todo el ancho de la página*/
+        justify-content: space-around;
+        background-color: #702222;
+        padding: 10px;
+      }
+      .menu a {
+        color: rgb(100, 26, 26);
+        text-decoration: none;
+        background-color: blue;
+        padding: 10px;
+        flex: 1;
+        /*el flex: 1 hace que los elementos se distribuyan de manera equitativa en el contenedor y que 
+        la línea azul cubra todo y no solo el texto*/
+        /*este style es solo para los nombres de los links*/
+      }
+      .galeria {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+      }
+      .galeria img {
+        width: 100%;
+        border-radius: 10px;
+        /*esto es para que las imágenes tengan bordes redondeados*/
+        /*este style es solo para las imágenes de la galería*/
+      }
+
+      .perfil {
+        display: flex;
+        align-items: center;
+        background: linear-gradient(135deg, #631414, #5500ff);
+        /*esto es para que el fondo sea un degradado*/
+        padding: 20px;
+        border-radius: 15px;
+        color: white;
+      }
+      .perfil img {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        margin-right: 15px;
+      }
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      .animado {
+        animation: fadeIn 2s ease-in-out;
+        /* como lo hemos puesto en una imagen que ya tenía una clase, 
+        solo tenemos que poner la palabra animado metida dentro de los mismos corchetes*/
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="menu">
+      <a href="#">Inicio</a>
+      <a href="#">Servicios</a>
+      <a href="#">Contacto</a>
+    </nav>
+    <div class="caja"></div>
+    <div>
+      <img
+        src="https://static.nationalgeographic.es/files/styles/image_3200/public/75552.ngsversion.1422285553360.webp?w=1450&h=967"
+        class="imagen animado"
+        id="gatotriste"
+      />
+      <p>
+        <strong>Lorem ipsum texto</strong>Lorem ipsum dolor sit amet consectetur
+        adipiscing elit purus, vitae nam diam nullam mollis bibendum aliquam.
+        Fusce lectus est cras quam himenaeos pharetra habitant, tempus ac libero
+        nisl purus lobortis metus ad, orci sociis rhoncus nullam neque volutpat.
+        Sapien ac lacinia leo a morbi interdum rhoncus tristique sodales massa,
+        ridiculus suscipit fusce nunc porta aptent et feugiat eget, etiam
+        pellentesque mollis bibendum enim vel auctor quis sagittis.
+      </p>
+    </div>
+    <div class="galeria">
+      <img
+        src="https://media.istockphoto.com/id/1391238510/es/vector/cordial-alien.jpg?s=612x612&w=0&k=20&c=jXtp8YjKXAt9CMNKPee1SKKS-pjrxTtf461hAl5SJkc="
+      />
+      <img
+        src="https://images.librotea.com/uploads/media/2023/10/11/los-marcianos-llegaron-ya-libros-que-te-acercan-a-los-extraterrestres.jpg"
+      />
+    </div>
+    <div class="perfil">
+      <img
+        src="https://img.freepik.com/fotos-premium/carita-sonriente-forma-flor-margarita_978861-17.jpg"
+        class="margarita"
+      />
+      <div>
+        <h3>Julitajacker333</h3>
+        <p>Diseñador Web</p>
+      </div>
+    </div>
+  </body>
+</html>
