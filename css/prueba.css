@@ -16,6 +16,18 @@ h1 {
   z-index: -1;
 }
 
+.imagen-gato {
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  width: 30%;
+}
+.imagen-gato2 {
+  position: absolute;
+  top: 63%;
+  left: -5%;
+  width: 30%;
+}
 .menu {
   font-family: Georgia, "Times New Roman", Times, serif;
   background-color: rgb(255, 255, 255);
@@ -41,12 +53,27 @@ h1 {
   color: black;
 }
 
+.analisis1 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: lighter;
+  color: rgb(255, 255, 255);
+  padding: 2rem;
+}
+.fondo1 {
+  background-color: rgb(228, 42, 42);
+  position: absolute;
+  top: 160%;
+  width: 80%;
+  height: 40%;
+  z-index: -1;
+  border-radius: 10px;
+}
 h2 {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-
-  color: rgb(228, 42, 42);
-  padding: 30px;
-  font-size: 5rem;
+  color: rgb(255, 255, 255);
+  padding: 4rem 0 0 0;
+  font-size: 3rem;
   background-color: transparent;
 }
 
