@@ -10,8 +10,6 @@ h2,
 h3,
 h4,
 h5 {
-  color: aqua;
-  background-color: blue;
   text-align: center;
 }
 
@@ -106,10 +104,6 @@ p {
   flex-basis: auto;
   align-self: auto;
   order: 0;
-}
-
-main:hover {
-  background-color: aqua;
 }
 
 body {
