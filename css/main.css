@@ -24,17 +24,6 @@ h5 {
   margin: 1rem;
 }
 
-p {
-  font-size: 40mm;
-  text-align: center;
-  font-weight: bolder;
-  font-family: "Syne", sans-serif;
-  color: #2d19e8;
-  padding: 5rem;
-  margin: 1rem;
-  animation: slideIn 3s;
-}
-
 #inicio .fade-in-text {
   opacity: 0; /* Start with the element hidden */
   animation: fadeIn 3s forwards; /* Apply the fade-in animation */
