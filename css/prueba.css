@@ -45,15 +45,15 @@ h1 {
 
 .imagen-gato {
   position: absolute;
-  top: 0%;
+  top: 3%;
   right: 0%;
   width: 30%;
   padding: 3rem 0 0 0;
 }
 .imagen-gato2 {
   position: absolute;
-  top: 70%;
-  left: -5%;
+  top: 75%;
+  left: -2%;
   width: 30%;
 }
 .menu {
