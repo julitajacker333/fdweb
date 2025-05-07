@@ -23,7 +23,7 @@
 .minombre {
   font-family: Monsieur La Doulaise, sans-serif;
   font-size: 5rem;
-  color: red;
+  color: rgb(0, 255, 13);
   text-align: center;
   position: absolute;
   top: 35%;
@@ -53,10 +53,19 @@
   margin-top: 22.5rem;
   left: 50%;
   transform: translateX(-50%);
+  z-index: 3;
 }
 
 .btn:hover {
   box-shadow: 1px 4px 10px blue; /* Cambia el color al pasar el cursor */
+}
+
+.gifportada {
+  position: absolute;
+  align-items: center;
+  top: -8%;
+  left: 35%;
+  width: 30%;
 }
 
 .menu {
@@ -84,9 +93,76 @@
   font-size: 1.2rem;
   color: rgb(57, 8, 236);
 }
+
+.sombra-superior {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  box-shadow: 0 4px 10px blue;
+  z-index: 9999;
+}
+
+.me {
+  font-family: Monsieur La Doulaise, sans-serif;
+  font-size: 4rem;
+  color: blue;
+  padding: 0.5rem;
+  text-align: left;
+  position: absolute;
+  top: 19%;
+  left: 6%;
+}
+
+.fotoJV {
+  position: absolute;
+  top: 50%;
+  right: 15%;
+  transform: translate(-50%, -50%);
+  width: 9rem;
+  height: auto;
+  align-items: right;
+}
+.fotoJV2 {
+  position: absolute;
+  top: 50%;
+  right: 30%;
+  transform: translate(-50%, -50%);
+  width: 9rem;
+  height: auto;
+  align-items: right;
+}
+.fotoJV3 {
+  position: absolute;
+  top: 50%;
+  right: -5%;
+  transform: translate(-50%, -50%);
+  width: 12.5rem;
+  height: auto;
+  align-items: right;
+}
+
+.contenedor-descripcion {
+  position: absolute;
+  top: 40%;
+  left: 6%;
+  width: 40%;
+  height: auto;
+}
+.descripcion {
+  font-family: Helvetica, sans-serif;
+  font-size: 0.8rem;
+  color: rgb(0, 0, 0);
+  top: 40%;
+  position: absolute;
+  z-index: 2;
+}
+
 footer {
   position: absolute;
   bottom: 0;
   left: 0%;
   right: 0%;
+  background-color: rgb(255, 0, 255);
 }
