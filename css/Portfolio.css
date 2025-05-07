@@ -68,32 +68,6 @@
   width: 30%;
 }
 
-.menu {
-  font-family: Helvetica, sans-serif;
-  background-color: white;
-  display: flex;
-  width: 100%;
-  justify-content: space-around;
-  padding: 0rem 0 0rem 0;
-  position: fixed;
-  top: 0%;
-  z-index: 100;
-  box-shadow: 0 4px 5px rgba(0, 0, 255);
-}
-
-.menu a {
-  text-decoration: none;
-  font-family: Helvetica, sans-serif;
-  color: rgb(0, 0, 0);
-  font-size: 0 2rem 0 2rem;
-  padding: 0.5rem;
-  transition: all 0.3s ease-in-out;
-}
-.menu a:hover {
-  font-size: 1.2rem;
-  color: rgb(57, 8, 236);
-}
-
 .sombra-superior {
   position: fixed;
   top: 0;
@@ -104,50 +78,93 @@
   z-index: 9999;
 }
 
-.me {
-  font-family: Monsieur La Doulaise, sans-serif;
+.entrada {
+  position: absolute;
+  top: 9%;
+  left: 6%;
   font-size: 4rem;
   color: blue;
-  padding: 0.5rem;
+}
+.me {
+  font-family: Monsieur La Doulaise, sans-serif;
+  font-size: 3.3rem;
+  color: rgb(0, 255, 13);
   text-align: left;
   position: absolute;
-  top: 19%;
+  top: 17%;
   left: 6%;
 }
 
 .fotoJV {
   position: absolute;
   top: 50%;
-  right: 15%;
+  right: 25%;
+  transform: translate(-50%, -50%);
+  width: 9rem;
+  height: auto;
+  align-items: right;
+}
+.fotoJV {
+  transition: filter 0.3s ease; /* Transición suave al aplicar el efecto */
+}
+
+.fotoJV:hover {
+  filter: brightness(200%); /* Cambia el tono de la imagen */
+}
+.fotoJV2 {
+  position: absolute;
+  top: 50%;
+  right: 40%;
   transform: translate(-50%, -50%);
   width: 9rem;
   height: auto;
   align-items: right;
 }
 .fotoJV2 {
+  transition: filter 0.3s ease; /* Transición suave al aplicar el efecto */
+}
+
+.fotoJV2:hover {
+  filter: brightness(200%); /* Cambia el tono de la imagen */
+}
+.fotoJV3 {
   position: absolute;
   top: 50%;
-  right: 30%;
+  right: 4%;
+  transform: translate(-50%, -50%);
+  width: 12.5rem;
+  height: auto;
+  align-items: right;
+}
+.fotoJV3 {
+  transition: filter 0.3s ease; /* Transición suave al aplicar el efecto */
+}
+
+.fotoJV3:hover {
+  filter: brightness(200%); /* Cambia el tono de la imagen */
+}
+.fotoJV4 {
+  position: absolute;
+  top: 50%;
+  right: -3%;
   transform: translate(-50%, -50%);
   width: 9rem;
   height: auto;
   align-items: right;
 }
-.fotoJV3 {
-  position: absolute;
-  top: 50%;
-  right: -5%;
-  transform: translate(-50%, -50%);
-  width: 12.5rem;
-  height: auto;
-  align-items: right;
+.fotoJV4 {
+  transition: filter 0.3s ease; /* Transición suave al aplicar el efecto */
+}
+
+.fotoJV4:hover {
+  filter: brightness(200%); /* Cambia el tono de la imagen */
 }
 
 .contenedor-descripcion {
   position: absolute;
   top: 40%;
   left: 6%;
-  width: 40%;
+  width: 35%;
   height: auto;
 }
 .descripcion {
@@ -157,6 +174,50 @@
   top: 40%;
   position: absolute;
   z-index: 2;
+}
+
+.estrella-btn {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.btn2 {
+  background-color: rgb(255, 0, 0);
+  color: rgb(255, 255, 255);
+  font-size: 0.8rem;
+  font-weight: bolder;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 35%;
+  left: 43%;
+  width: 9rem;
+  height: 9rem;
+  box-shadow: 0 0 0 5px red;
+  clip-path: polygon(
+    50% 0%,
+    61% 35%,
+    98% 35%,
+    68% 57%,
+    79% 91%,
+    50% 70%,
+    21% 91%,
+    32% 57%,
+    2% 35%,
+    39% 35%
+  ); /* Forma de estrella */
+  transition: background-color 0.3s ease;
+  z-index: 10;
+}
+
+.btn2:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgb(255, 0, 0);
+}
+
+a {
+  text-decoration: none;
 }
 
 footer {
