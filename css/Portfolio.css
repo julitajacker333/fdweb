@@ -324,6 +324,34 @@ a {
   transform: scale(1.2); /* Aumenta el tamaño al pasar el ratón */
 }
 
+.imagen-zoom7 {
+  width: 230px;
+  position: absolute;
+  top: 160%;
+  right: 40%;
+}
+.imagen-zoom7:hover {
+  transform: scale(1.2); /* Aumenta el tamaño al pasar el ratón */
+}
+.imagen-zoom8 {
+  width: 230px;
+  position: absolute;
+  top: 160%;
+  right: 60%;
+}
+.imagen-zoom8:hover {
+  transform: scale(1.2); /* Aumenta el tamaño al pasar el ratón */
+}
+.imagen-zoom9 {
+  width: 230px;
+  position: absolute;
+  top: 160%;
+  right: 80%;
+}
+.imagen-zoom9:hover {
+  transform: scale(1.2); /* Aumenta el tamaño al pasar el ratón */
+}
+
 .posters1 {
   font-family: helvetica, sans-serif;
   font-size: 3.5rem;
@@ -381,6 +409,11 @@ a {
   left: 5%;
 }
 
+.poster3 {
+  position: absolute;
+  top: 160%;
+  right: 20%;
+}
 .descripcion2 {
   top: 32%;
   position: absolute;
@@ -391,6 +424,15 @@ a {
   width: 28.5%;
 }
 .descripcion3 {
+  top: 170%;
+  position: absolute;
+  right: 7.5%;
+  font-family: Helvetica, sans-serif;
+  font-size: 0.8rem;
+  color: rgb(0, 0, 0);
+  width: 28.5%;
+}
+.descripcion4 {
   top: 110%;
   position: absolute;
   left: 5%;
@@ -398,6 +440,31 @@ a {
   font-size: 0.8rem;
   color: rgb(0, 0, 0);
   width: 28.5%;
+}
+.descripcion5 {
+  top: 210%;
+  position: absolute;
+  right: 44%;
+  font-family: Helvetica, sans-serif;
+  font-size: 0.8rem;
+  color: rgb(0, 0, 0);
+}
+.descripcion6 {
+  top: 210%;
+  position: absolute;
+  right: 64%;
+  font-family: Helvetica, sans-serif;
+  font-size: 0.8rem;
+  color: rgb(0, 0, 0);
+}
+.descripcion7 {
+  top: 210%;
+  position: absolute;
+  right: 80.5%;
+  font-family: Helvetica, sans-serif;
+  font-size: 0.8rem;
+  color: rgb(0, 0, 0);
+  text-align: center;
 }
 
 footer {
