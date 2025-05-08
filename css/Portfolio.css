@@ -172,14 +172,19 @@ body {
   left: 6%;
   width: 35%;
   height: auto;
-}
-.descripcion {
   font-family: Helvetica, sans-serif;
   font-size: 0.8rem;
   color: rgb(0, 0, 0);
+}
+.descripcion {
   top: 40%;
   position: absolute;
   z-index: 2;
+}
+
+.descripcion2 {
+  top: 50%;
+  position: absolute;
 }
 
 .estrella-btn {
@@ -261,15 +266,61 @@ a {
 }
 
 .imagen-zoom {
-  width: 200px; /* Tamaño inicial de la imagen */
+  width: 90px; /* Tamaño inicial de la imagen */
   height: auto;
   transition: transform 0.3s ease; /* Transición suave */
   position: absolute;
-  top: 25%;
+  top: 20%;
+  left: 15%;
+}
+.imagen-zoom2 {
+  width: 90px; /* Tamaño inicial de la imagen */
+  height: auto;
+  transition: transform 0.3s ease; /* Transición suave */
+  position: absolute;
+  top: 20%;
   left: 5%;
 }
 
-.imagen-zoom:hover {
+.imagen-zoom3 {
+  width: 230px; /* Tamaño inicial de la imagen */
+  height: auto;
+  transition: transform 0.3s ease; /* Transición suave */
+  position: absolute;
+  top: 20%;
+  right: 5%;
+}
+
+.imagen-zoom3:hover {
+  transform: scale(1.2); /* Aumenta el tamaño al pasar el ratón */
+}
+
+.imagen-zoom4 {
+  width: 230px; /* Tamaño inicial de la imagen */
+  height: auto;
+  transition: transform 0.3s ease; /* Transición suave */
+  position: absolute;
+  top: 20%;
+  right: 25%;
+}
+
+.imagen-zoom4:hover {
+  transform: scale(1.2); /* Aumenta el tamaño al pasar el ratón */
+}
+
+.imagen-zoom5 {
+  width: 350px;
+  position: absolute;
+  top: 95%;
+  left: 30%;
+}
+.imagen-zoom6 {
+  width: 230px;
+  position: absolute;
+  top: 95%;
+  right: 20%;
+}
+.imagen-zoom6:hover {
   transform: scale(1.2); /* Aumenta el tamaño al pasar el ratón */
 }
 
@@ -311,10 +362,49 @@ a {
   transform: translate(-50%, -50%);
 }
 
-footer {
+.tituloposter {
+  font-family: helvetica, sans-serif;
+  font-size: 1.5rem;
+  color: blue;
+  height: 100%;
+}
+
+.poster1 {
   position: absolute;
+  top: 25%;
+  left: 26%;
+}
+
+.poster2 {
+  position: absolute;
+  top: 100%;
+  left: 5%;
+}
+
+.descripcion2 {
+  top: 32%;
+  position: absolute;
+  left: 26%;
+  font-family: Helvetica, sans-serif;
+  font-size: 0.8rem;
+  color: rgb(0, 0, 0);
+  width: 28.5%;
+}
+.descripcion3 {
+  top: 110%;
+  position: absolute;
+  left: 5%;
+  font-family: Helvetica, sans-serif;
+  font-size: 0.8rem;
+  color: rgb(0, 0, 0);
+  width: 28.5%;
+}
+
+footer {
+  position: relative;
   bottom: 0;
   left: 0%;
   right: 0%;
   background-color: rgb(255, 0, 255);
+  padding: 2rem 0 0 0;
 }
