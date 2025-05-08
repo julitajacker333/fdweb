@@ -1,6 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&family=Syne:wght@400..800&display=swap");
 
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
 .contenedor {
   position: relative; /* Contenedor relativo para posicionar los elementos */
   width: 100%;
@@ -73,7 +79,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 10px;
+  height: 8px;
   box-shadow: 0 4px 10px blue;
   z-index: 9999;
 }
@@ -183,41 +189,126 @@
 }
 
 .btn2 {
-  background-color: rgb(255, 0, 0);
-  color: rgb(255, 255, 255);
+  color: rgb(0, 255, 13);
   font-size: 0.8rem;
-  font-weight: bolder;
+  font-family: helvetica, sans-serif;
   border: none;
   cursor: pointer;
   position: absolute;
-  top: 35%;
-  left: 43%;
-  width: 9rem;
-  height: 9rem;
-  box-shadow: 0 0 0 5px red;
-  clip-path: polygon(
-    50% 0%,
-    61% 35%,
-    98% 35%,
-    68% 57%,
-    79% 91%,
-    50% 70%,
-    21% 91%,
-    32% 57%,
-    2% 35%,
-    39% 35%
-  ); /* Forma de estrella */
+  top: 8%;
+  left: 6%;
   transition: background-color 0.3s ease;
   z-index: 10;
 }
 
 .btn2:hover {
-  background-color: rgb(255, 255, 255);
-  color: rgb(255, 0, 0);
+  font-weight: bolder;
+}
+
+.btn3 {
+  color: rgb(0, 255, 13);
+  font-size: 0.8rem;
+  font-family: helvetica, sans-serif;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 8%;
+  left: 12%;
+  transition: background-color 0.3s ease;
+  z-index: 10;
+}
+
+.btn3:hover {
+  font-weight: bolder;
+}
+
+.btn4 {
+  color: rgb(0, 255, 13);
+  font-size: 0.8rem;
+  font-family: helvetica, sans-serif;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 8%;
+  left: 27%;
+  transition: background-color 0.3s ease;
+  z-index: 10;
+}
+
+.btn4:hover {
+  font-weight: bolder;
+}
+
+.btn5 {
+  color: rgb(0, 255, 13);
+  font-size: 0.8rem;
+  font-family: helvetica, sans-serif;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 8%;
+  left: 35%;
+  transition: background-color 0.3s ease;
+  z-index: 10;
+}
+
+.btn5:hover {
+  font-weight: bolder;
 }
 
 a {
   text-decoration: none;
+}
+
+.imagen-zoom {
+  width: 200px; /* Tamaño inicial de la imagen */
+  height: auto;
+  transition: transform 0.3s ease; /* Transición suave */
+  position: absolute;
+  top: 25%;
+  left: 5%;
+}
+
+.imagen-zoom:hover {
+  transform: scale(1.2); /* Aumenta el tamaño al pasar el ratón */
+}
+
+.posters1 {
+  font-family: helvetica, sans-serif;
+  font-size: 3.5rem;
+  font-weight: bolder;
+  color: rgb(0, 255, 13);
+  position: absolute;
+  align-items: center;
+  top: 4%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+@keyframes cambioRapido {
+  0% {
+    color: rgb(0, 255, 13); /* Color inicial */
+  }
+  50% {
+    color: blue; /* Color alternativo */
+  }
+  100% {
+    color: rgb(0, 255, 13); /* Vuelve al color inicial */
+  }
+}
+
+.posters1:hover {
+  animation: cambioRapido 0.2s infinite; /* Cambia de color rápidamente */
+}
+
+.posters2 {
+  font-family: Monsieur La Doulaise, sans-serif;
+  font-size: 3rem;
+  color: blue;
+  position: absolute;
+  align-items: center;
+  top: 9%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 footer {
