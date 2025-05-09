@@ -309,16 +309,16 @@ a {
 }
 
 .imagen-zoom5 {
-  width: 350px;
+  width: 450px;
   position: absolute;
   top: 95%;
-  left: 30%;
+  left: 40%;
 }
 .imagen-zoom6 {
   width: 230px;
   position: absolute;
-  top: 95%;
-  right: 20%;
+  top: 92.7%;
+  right: 5%;
 }
 .imagen-zoom6:hover {
   transform: scale(1.2); /* Aumenta el tamaño al pasar el ratón */
@@ -350,6 +350,26 @@ a {
 }
 .imagen-zoom9:hover {
   transform: scale(1.2); /* Aumenta el tamaño al pasar el ratón */
+}
+
+.sumoimg {
+  width: 50%;
+  position: absolute;
+  top: 25%;
+  left: 5%;
+}
+
+.sumoimg2 {
+  width: 50%;
+  position: absolute;
+  top: 65%;
+  right: -8%;
+}
+.sumoimg3 {
+  width: 66%;
+  position: absolute;
+  top: 76%;
+  left: -13%;
 }
 
 .posters1 {
@@ -390,6 +410,46 @@ a {
   transform: translate(-50%, -50%);
 }
 
+.Branding1 {
+  font-family: helvetica, sans-serif;
+  font-size: 3.5rem;
+  font-weight: bolder;
+  color: rgb(0, 255, 13);
+  position: absolute;
+  align-items: center;
+  top: 7%;
+  left: 50%;
+  text-align: center;
+  width: 100%;
+  transform: translate(-50%, -50%);
+}
+@keyframes cambioRapido {
+  0% {
+    color: rgb(0, 255, 13); /* Color inicial */
+  }
+  50% {
+    color: blue; /* Color alternativo */
+  }
+  100% {
+    color: rgb(0, 255, 13); /* Vuelve al color inicial */
+  }
+}
+
+.Branding1:hover {
+  animation: cambioRapido 0.2s infinite; /* Cambia de color rápidamente */
+}
+
+.Branding2 {
+  font-family: Monsieur La Doulaise, sans-serif;
+  font-size: 3rem;
+  color: blue;
+  position: absolute;
+  align-items: center;
+  top: 11%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .tituloposter {
   font-family: helvetica, sans-serif;
   font-size: 1.5rem;
@@ -414,6 +474,13 @@ a {
   top: 160%;
   right: 20%;
 }
+
+.sumo1 {
+  position: absolute;
+  top: 28%;
+  left: 58%;
+}
+
 .descripcion2 {
   top: 32%;
   position: absolute;
@@ -448,6 +515,7 @@ a {
   font-family: Helvetica, sans-serif;
   font-size: 0.8rem;
   color: rgb(0, 0, 0);
+  padding: 0 0 1rem 0;
 }
 .descripcion6 {
   top: 210%;
@@ -456,15 +524,37 @@ a {
   font-family: Helvetica, sans-serif;
   font-size: 0.8rem;
   color: rgb(0, 0, 0);
+  padding: 0 0 1rem 0;
 }
 .descripcion7 {
   top: 210%;
   position: absolute;
-  right: 80.5%;
+  right: 80.3%;
   font-family: Helvetica, sans-serif;
   font-size: 0.8rem;
   color: rgb(0, 0, 0);
   text-align: center;
+  padding: 0 0 1rem 0;
+}
+.descripcion8 {
+  top: 35%;
+  position: absolute;
+  left: 58%;
+  font-family: Helvetica, sans-serif;
+  font-size: 0.8rem;
+  color: rgb(0, 0, 0);
+  width: 35%;
+}
+.descripcion9 {
+  top: 115%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  font-family: Helvetica, sans-serif;
+  font-size: 0.8rem;
+  color: rgb(0, 0, 0);
+  width: 35%;
+  padding: 1rem;
 }
 
 footer {
