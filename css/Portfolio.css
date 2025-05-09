@@ -372,6 +372,33 @@ a {
   left: -13%;
 }
 
+.Galloimg {
+  width: 50%;
+  position: absolute;
+  top: 158%;
+  left: 5%;
+}
+
+.Galloimg1 {
+  width: 19%;
+  position: absolute;
+  top: 193%;
+  right: 25%;
+}
+
+.Galloimg2 {
+  width: 19%;
+  position: absolute;
+  top: 193%;
+  right: 15%;
+}
+.Galloimg3 {
+  width: 19%;
+  position: absolute;
+  top: 193%;
+  right: 5%;
+}
+
 .posters1 {
   font-family: helvetica, sans-serif;
   font-size: 3.5rem;
@@ -480,6 +507,11 @@ a {
   top: 28%;
   left: 58%;
 }
+.Gallo1 {
+  position: absolute;
+  top: 159%;
+  right: 34%;
+}
 
 .descripcion2 {
   top: 32%;
@@ -546,8 +578,19 @@ a {
   width: 35%;
 }
 .descripcion9 {
-  top: 115%;
+  top: 120%;
   left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  font-family: Helvetica, sans-serif;
+  font-size: 0.8rem;
+  color: rgb(0, 0, 0);
+  width: 35%;
+  padding: 1rem;
+}
+.descripcion10 {
+  top: 179%;
+  right: -11%;
   position: absolute;
   transform: translate(-50%, -50%);
   font-family: Helvetica, sans-serif;
