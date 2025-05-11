@@ -903,3 +903,220 @@ footer {
   background-color: rgb(255, 0, 255);
   padding: 2rem 0 0 0;
 }
+
+.error {
+  font-family: helvetica, sans-serif;
+  font-size: 15rem;
+  font-weight: bolder;
+  color: blue;
+  position: absolute;
+  align-items: center;
+  top: 50%;
+  left: 58%;
+  text-align: center;
+  width: auto;
+  transform: translate(-50%, -50%);
+}
+@keyframes cambioRapido {
+  0% {
+    color: rgb(0, 255, 13); /* Color inicial */
+  }
+  50% {
+    color: blue; /* Color alternativo */
+  }
+  100% {
+    color: rgb(0, 255, 13); /* Vuelve al color inicial */
+  }
+}
+.error:hover {
+  animation: cambioRapido 0.2s infinite; /* Cambia de color rápidamente */
+}
+.descripcion20 {
+  top: 64%;
+  position: absolute;
+  left: 58%;
+  transform: translate(-50%, -50%);
+  font-family: Monsieur La Doulaise, sans-serif;
+  font-size: 5rem;
+  color: rgb(0, 255, 13);
+  width: auto;
+}
+.giferror {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+}
+.btnerror-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+.btnerror {
+  font-family: "helvetica", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: blue;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid blue;
+  border-radius: 10px; /*Espacio interno del contenido del botón*/
+  padding: 0.8rem 1.5rem;
+  text-align: center;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+  position: absolute;
+  margin-top: 3rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3;
+}
+
+.btnerror:hover {
+  box-shadow: 1px 4px 10px blue; /* Cambia el color al pasar el cursor */
+}
+.garras {
+  position: absolute;
+  top: 59%;
+  right: 13%;
+  width: 15%;
+}
+.contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 90%;
+  margin: auto;
+  padding: 1rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+h7,
+h8,
+h9,
+h10,
+h11,
+h12,
+h13,
+h14,
+h15,
+h16,
+h17,
+h18,
+h19,
+h20,
+h21,
+h22,
+h23,
+h24,
+h25,
+h26,
+h27,
+h28,
+h29,
+h30 {
+  font-size: clamp(1rem, 2.5vw, 4rem);
+}
+@media (max-width: 768px) {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: clamp(
+      1rem,
+      4vw,
+      2.5rem
+    ); /* Reduce el tamaño en pantallas medianas */
+  }
+}
+
+@media (max-width: 480px) {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: clamp(
+      0.8rem,
+      5vw,
+      2rem
+    ); /* Reduce aún más en pantallas pequeñas */
+  }
+}
+@media (max-width: 768px) {
+  img {
+    max-width: 90%; /* Reduce el tamaño de las imágenes en pantallas medianas */
+    margin: 0 auto; /* Centra las imágenes */
+  }
+}
+
+@media (max-width: 480px) {
+  img {
+    max-width: 100%; /* Ocupa todo el ancho disponible en pantallas pequeñas */
+  }
+}
+@media (max-width: 768px) {
+  .btn,
+  .btnerror {
+    font-size: 1rem; /* Reduce el tamaño del texto */
+    padding: 0.6rem 1rem; /* Ajusta el relleno */
+    margin-top: 2rem; /* Ajusta el margen superior */
+  }
+}
+
+@media (max-width: 480px) {
+  .btn,
+  .btnerror {
+    font-size: 0.9rem; /* Reduce aún más el tamaño del texto */
+    padding: 0.5rem 0.8rem;
+  }
+}
+@media (max-width: 768px) {
+  .contenedor {
+    flex-direction: column; /* Cambia a una disposición en columna */
+    align-items: center; /* Centra los elementos */
+  }
+}
+.descripcion,
+.descripcion2,
+.descripcion3 {
+  font-size: clamp(0.8rem, 2vw, 1.2rem); /* Tamaño dinámico */
+  line-height: 1.6; /* Mejora la legibilidad */
+}
+
+@media (max-width: 768px) {
+  .descripcion,
+  .descripcion2,
+  .descripcion3 {
+    font-size: clamp(
+      0.7rem,
+      3vw,
+      1rem
+    ); /* Reduce el tamaño en pantallas medianas */
+  }
+}
+
+@media (max-width: 480px) {
+  .descripcion,
+  .descripcion2,
+  .descripcion3 {
+    font-size: clamp(
+      0.6rem,
+      4vw,
+      0.9rem
+    ); /* Reduce aún más en pantallas pequeñas */
+  }
+}
