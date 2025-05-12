@@ -166,10 +166,11 @@ body {
   font-size: 0.8rem;
   color: rgb(0, 0, 0);
 }
-.descripcion {
+.descripcion-Home {
   top: 40%;
   position: absolute;
   z-index: 2;
+  font-size: 0.8rem;
 }
 
 .descripcion2 {
@@ -618,7 +619,7 @@ a {
 .Gallo1 {
   position: absolute;
   top: 159%;
-  right: 34%;
+  right: 30.5%;
 }
 
 .Santiamen1 {
