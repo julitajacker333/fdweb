@@ -44,7 +44,7 @@ body {
 }
 .btn {
   font-family: "helvetica", sans-serif;
-  font-size: 1.2rem;
+  font-size: clamp(1rem, 5vw, 1.2rem);
   font-weight: 400;
   color: blue;
   background-color: rgb(255, 255, 255);
@@ -178,79 +178,75 @@ body {
 }
 
 .estrella-btn {
-  position: relative;
+  display: flex;
+  top: 0%;
+  left: 2%;
+  flex-direction: row; /* Los botones estarán en fila por defecto */
+  justify-content: flex-start;
+  gap: 0.6rem;
   width: 100%;
-  height: 100vh;
+  height: 3vh;
+  position: fixed;
+  padding: 0.6rem 0 0 0;
+  background-color: rgba(255, 255, 255, 0.5); /* Fondo semitransparente */
+  backdrop-filter: blur(10px); /* Difumina el fondo detrás del contenedor */
+  -webkit-backdrop-filter: blur(10px);
+  z-index: 222;
+}
+@media (max-width: 768px) {
+  .estrella-btn {
+    flex-direction: column; /* Cambia a disposición en columna */
+    align-items: center; /* Centra los botones */
+    gap: 0.5rem; /* Reduce el espacio entre los botones */
+  }
 }
 
-.btn2 {
+@media (max-width: 480px) {
+  .estrella-btn {
+    gap: 0.3rem; /* Reduce aún más el espacio en pantallas pequeñas */
+  }
+}
+.estrella-btn a {
   color: rgb(0, 255, 13);
-  font-size: 0.8rem;
-  font-family: helvetica, sans-serif;
-  border: none;
+  font-size: clamp(0.7rem, 5vw, 1rem); /* Ajusta el tamaño del texto */
+  font-family: Helvetica, sans-serif;
+  text-decoration: none; /* Elimina el subrayado */
+  padding: 0, 3rem;
+  text-align: center; /* Centra el texto dentro del botón */
   cursor: pointer;
-  position: absolute;
-  top: 2%;
-  left: 6%;
-  transition: background-color 0.3s ease;
-  z-index: 10;
+  font-weight: normal; /* Peso inicial del texto */
+  transition: font-weight 0.3s ease, transform 0.3s ease;
+  display: inline-block; /* Asegura que el enlace respete su propio espacio */
+  min-width: 100px;
+  width: fit-content;
+}
+.estrella-btn a {
+  font-size: clamp(0.5rem, 2vw, 1rem); /* Tamaño dinámico */
+}
+@media (max-width: 768px) {
+  .estrella-btn a {
+    font-size: clamp(
+      0.7rem,
+      3vw,
+      1rem
+    ); /* Reduce el tamaño en pantallas medianas */
+    padding: 0.4rem 0.8rem; /* Ajusta el espaciado interno */
+  }
 }
 
-.btn2:hover {
-  font-weight: bolder;
+@media (max-width: 480px) {
+  .estrella-btn a {
+    font-size: clamp(
+      0.6rem,
+      4vw,
+      0.9rem
+    ); /* Reduce aún más el tamaño en pantallas pequeñas */
+    padding: 0.3rem 0.6rem; /* Ajusta el espaciado interno */
+  }
 }
-
-.btn3 {
-  color: rgb(0, 255, 13);
-  font-size: 0.8rem;
-  font-family: helvetica, sans-serif;
-  border: none;
-  cursor: pointer;
-  position: absolute;
-  top: 2%;
-  left: 12%;
-  transition: background-color 0.3s ease;
-  z-index: 10;
+.estrella-btn a:hover {
+  transform: scale(1.1); /* Escala ligeramente el texto */
 }
-
-.btn3:hover {
-  font-weight: bolder;
-}
-
-.btn4 {
-  color: rgb(0, 255, 13);
-  font-size: 0.8rem;
-  font-family: helvetica, sans-serif;
-  border: none;
-  cursor: pointer;
-  position: absolute;
-  top: 2%;
-  left: 18.5%;
-  transition: background-color 0.3s ease;
-  z-index: 10;
-}
-
-.btn4:hover {
-  font-weight: bolder;
-}
-
-.btn5 {
-  color: rgb(0, 255, 13);
-  font-size: 0.8rem;
-  font-family: helvetica, sans-serif;
-  border: none;
-  cursor: pointer;
-  position: absolute;
-  top: 2%;
-  left: 27%;
-  transition: background-color 0.3s ease;
-  z-index: 10;
-}
-
-.btn5:hover {
-  font-weight: bolder;
-}
-
 a {
   text-decoration: none;
 }
@@ -432,7 +428,7 @@ a {
 }
 .posters1 {
   font-family: helvetica, sans-serif;
-  font-size: 3.5rem;
+  font-size: clamp(2rem, 5vw, 3.5rem);
   font-weight: bolder;
   color: rgb(0, 255, 13);
   position: absolute;
@@ -459,7 +455,7 @@ a {
 
 .posters2 {
   font-family: Monsieur La Doulaise, sans-serif;
-  font-size: 3rem;
+  font-size: clamp(2rem, 5vw, 3rem);
   color: blue;
   position: absolute;
   align-items: center;
@@ -470,7 +466,7 @@ a {
 
 .Branding1 {
   font-family: helvetica, sans-serif;
-  font-size: 3.5rem;
+  font-size: clamp(2rem, 5vw, 3.5rem);
   font-weight: bolder;
   color: rgb(0, 255, 13);
   position: absolute;
@@ -499,7 +495,7 @@ a {
 
 .Branding2 {
   font-family: Monsieur La Doulaise, sans-serif;
-  font-size: 3rem;
+  font-size: clamp(2rem, 5vw, 3rem);
   color: blue;
   position: absolute;
   align-items: center;
@@ -509,7 +505,7 @@ a {
 }
 .Fotografias1 {
   font-family: helvetica, sans-serif;
-  font-size: 3.5rem;
+  font-size: clamp(2rem, 5vw, 3.5rem);
   font-weight: bolder;
   color: rgb(0, 255, 13);
   position: absolute;
@@ -538,7 +534,7 @@ a {
 
 .Fotografias2 {
   font-family: Monsieur La Doulaise, sans-serif;
-  font-size: 3rem;
+  font-size: clamp(2rem, 5vw, 3rem);
   color: blue;
   position: absolute;
   align-items: center;
@@ -548,7 +544,7 @@ a {
 }
 .film1 {
   font-family: helvetica, sans-serif;
-  font-size: 3.5rem;
+  font-size: clamp(2rem, 5vw, 3.5rem);
   font-weight: bolder;
   color: rgb(0, 255, 13);
   position: absolute;
@@ -577,7 +573,7 @@ a {
 
 .film2 {
   font-family: Monsieur La Doulaise, sans-serif;
-  font-size: 3rem;
+  font-size: clamp(2rem, 5vw, 3rem);
   color: blue;
   position: absolute;
   align-items: center;
@@ -791,24 +787,6 @@ a {
   color: rgb(0, 0, 0);
   width: 28.5%;
 }
-.descripcionposter2 {
-  top: 170%;
-  position: absolute;
-  right: 7.5%;
-  font-family: Helvetica, sans-serif;
-  font-size: 0.8rem;
-  color: rgb(0, 0, 0);
-  width: 28.5%;
-}
-.descripcion3 {
-  top: 110%;
-  position: absolute;
-  left: 5%;
-  font-family: Helvetica, sans-serif;
-  font-size: 0.8rem;
-  color: rgb(0, 0, 0);
-  width: 28.5%;
-}
 .descripcion5 {
   top: 210%;
   position: absolute;
@@ -817,6 +795,25 @@ a {
   font-size: 0.8rem;
   color: rgb(0, 0, 0);
   padding: 0 0 1rem 0;
+}
+.descripcionVV {
+  font-family: Helvetica, sans-serif;
+  top: 110%;
+  position: absolute;
+  left: 5%;
+  font-size: 0.8rem;
+  color: rgb(0, 0, 0);
+  width: 28.5%;
+}
+.descripcionJD {
+  top: 170%;
+  position: absolute;
+  right: 3%;
+  font-family: Helvetica, sans-serif;
+  font-size: 0.8rem;
+  color: rgb(0, 0, 0);
+  padding: 0 0 1rem 0;
+  width: 35%;
 }
 .descripcion6 {
   top: 210%;
@@ -904,83 +901,6 @@ footer {
   padding: 2rem 0 0 0;
 }
 
-.error {
-  font-family: helvetica, sans-serif;
-  font-size: 15rem;
-  font-weight: bolder;
-  color: blue;
-  position: absolute;
-  align-items: center;
-  top: 50%;
-  left: 58%;
-  text-align: center;
-  width: auto;
-  transform: translate(-50%, -50%);
-}
-@keyframes cambioRapido {
-  0% {
-    color: rgb(0, 255, 13); /* Color inicial */
-  }
-  50% {
-    color: blue; /* Color alternativo */
-  }
-  100% {
-    color: rgb(0, 255, 13); /* Vuelve al color inicial */
-  }
-}
-.error:hover {
-  animation: cambioRapido 0.2s infinite; /* Cambia de color rápidamente */
-}
-.descripcion20 {
-  top: 64%;
-  position: absolute;
-  left: 58%;
-  transform: translate(-50%, -50%);
-  font-family: Monsieur La Doulaise, sans-serif;
-  font-size: 5rem;
-  color: rgb(0, 255, 13);
-  width: auto;
-}
-.giferror {
-  position: absolute;
-  top: 50%;
-  left: 30%;
-  transform: translate(-50%, -50%);
-  width: 50%;
-}
-.btnerror-container {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-}
-.btnerror {
-  font-family: "helvetica", sans-serif;
-  font-size: 1.2rem;
-  font-weight: 400;
-  color: blue;
-  background-color: rgb(255, 255, 255);
-  border: 1px solid blue;
-  border-radius: 10px; /*Espacio interno del contenido del botón*/
-  padding: 0.8rem 1.5rem;
-  text-align: center;
-  cursor: pointer;
-  transition: box-shadow 0.3s ease;
-  position: absolute;
-  margin-top: 3rem;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 3;
-}
-
-.btnerror:hover {
-  box-shadow: 1px 4px 10px blue; /* Cambia el color al pasar el cursor */
-}
-.garras {
-  position: absolute;
-  top: 59%;
-  right: 13%;
-  width: 15%;
-}
 .contenedor {
   display: flex;
   flex-wrap: wrap;
